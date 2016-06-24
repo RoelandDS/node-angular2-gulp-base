@@ -1,10 +1,10 @@
 'use strict';
 
-// Development specific configuration
+// Test specific configuration
 // ==================================
 module.exports = {
-  port: 4000,
-  domain: 'http://localhost:4000',
+  port: 3000, // change to test port
+  domain: 'http://localhost:3000', // insert production domain here
   gulp: {
     paths: [],
     uglify: {
