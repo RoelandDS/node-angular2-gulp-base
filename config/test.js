@@ -9,6 +9,7 @@ module.exports = {
     paths: [],
     uglify: {
       app: []
-    }
+    },
+    tests: ['server/specs/*.spec.js']
   }
 };
