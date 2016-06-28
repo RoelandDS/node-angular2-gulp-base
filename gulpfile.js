@@ -1,12 +1,19 @@
 'use strict';
 
 const gulp = require('gulp');
+const reqDir = require('require-dir');
 
 gulp.task('dev', () => {
-  require('./gulp/development.gulp.js')(gulp);
+  const tasks = reqDir('./gulp/development');
+  for (let task in tasks){
+    tasks[task](gulp);
+  }
 });
 
 gulp.task('test', () => {
-  require('./gulp/test.gulp.js')(gulp);
+  const tasks = reqDir('./gulp/test');
+  for (let task in tasks){
+    tasks[task](gulp);
+  }
 });
 
