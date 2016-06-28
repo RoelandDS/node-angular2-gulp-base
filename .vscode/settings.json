@@ -1,0 +1,12 @@
+// Custom settings for this project that override the default settings from Visual Code.
+{
+  "editor.tabSize": 2,
+  "editor.formatOnType": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/*.js": { "when": "$(basename).ts"},
+    "**/*.js.map": true
+  },
+}
