@@ -10,7 +10,7 @@ module.exports = function (gulp) {
   pm2.connect(true, () => {
     pm2.start({
       'name': 'name.of.app-test',
-      'script':  __dirname + '/../../server.js',
+      'script':  '/../../server.js',
       'instances': 1,
       'exec_mode': 'cluster',
       'watch': true,

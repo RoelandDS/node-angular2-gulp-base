@@ -15,8 +15,7 @@ const app = express();
 const env = app.get('env');
 
 // view engine setup according to environment
-app.set('views', path.join(__dirname, 'server/views/' + env));
-app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, '/server/views/' + env));
 
 // environment config
 const config = require('./config/' + env);

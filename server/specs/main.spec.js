@@ -10,6 +10,9 @@ describe('main', () => {
       .get('/')
       .set('Accept', 'application/json')
       .expect('Content-type', /json/)
-      .expect(200, done());
+      .expect(200, (err) => {
+        if (err) console.log(err);
+        else done();
+      });
   });
 });
